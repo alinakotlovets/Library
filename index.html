@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="form-overlay" id="form-overlay"> </div>
+<h1 class="main-text">
+    Add new books to your list:
+</h1>
+<button class="form-btn" id="form-btn">Add new book</button>
+
+<form id="form-add-books" class="form-add-books">
+    <p class="form-title">Add new book</p>
+    <label class="form-label" for="title">Book title:</label>
+    <input type="text" required class="form-input" id="title">
+    <label class="form-label" for="author">Book author:</label>
+    <input type="text" required class="form-input" id="author">
+    <label class="form-label" for="pages">Number of pages:</label>
+    <input type="number" required class="form-input" id="pages" min="1">
+    <div class="form-check-box">
+        <label class="form-label-checkbox" for="read">Read:</label>
+        <input type="checkbox" class="form-check" id="read">
+    </div>
+    <div class="form-btns-box">
+    <button id="add-book" type="submit" class="form-in-btn">Submit</button>
+    <button id="form-close" type="button" class="form-cl-btn">Cansel</button>
+    </div>
+</form>
+
+
+<div class="books-box" id="books-box">
+    <ul class="books-list">
+
+    </ul>
+</div>
+
+</body>
+<script src="books.js"></script>
+</html>
